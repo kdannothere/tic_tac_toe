@@ -124,6 +124,8 @@ body {
    text-wrap: nowrap;
    -ms-flex-preferred-size: 100%;
        flex-basis: 100%;
+   -webkit-background-clip: text;
+           background-clip: text;
 }
 
 #player_1_value {

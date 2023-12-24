@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+      <!-- <div class="my_header">HEADER</div> -->	<script src="js/main.js"></script>
+	<div class="game">
+		<div class="game__body">
+			<div id="game__dialog">
+				<span id="dialog_winner"></span>
+				<span id="dialog__message"></span>
+				<div id="button__restart" onclick="restartGame()">Restart</div>
+			</div>
+			<div class="game__counter">
+				<p class="game__players" id="player_1">Player 1: <span id="player_1_value">0</span></p>
+				<p class="game__players" id="player_2">Player 2: <span id="player_2_value">0</span></p>
+				<p id="game__turn">Turn: <span id="turn_value">X</span></p>
+			</div>
+			<div class="game__board">
+				<div class="game__toprow">
+					<div class="game__cell" onclick="cellClicked(this)"></div>
+					<div class="game__cell" onclick="cellClicked(this)"></div>
+					<div class="game__cell" onclick="cellClicked(this)"></div>
+				</div>
+				<div class="game__centerrow">
+					<div class="game__cell" onclick="cellClicked(this)"></div>
+					<div class="game__cell" onclick="cellClicked(this)"></div>
+					<div class="game__cell" onclick="cellClicked(this)"></div>
+				</div>
+				<div class="game__bottomrow">
+					<div class="game__cell" onclick="cellClicked(this)"></div>
+					<div class="game__cell" onclick="cellClicked(this)"></div>
+					<div class="game__cell" onclick="cellClicked(this)"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

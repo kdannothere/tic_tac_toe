@@ -68,6 +68,7 @@ function showDialog() {
 	const viewDialog = document.getElementById("game__dialog");
 	const viewDialogMessage = document.getElementById("dialog__message");
 	const viewDialogWinner = document.getElementById("dialog_winner");
+	const viewGameBoard = document.getElementById("game__board");
 	viewDialogMessage.innerHTML = message;
 
 	switch (winner) {
@@ -82,12 +83,15 @@ function showDialog() {
 		case "":
 			viewDialogWinner.innerHTML = ``;
 	}
+	viewGameBoard.style.visibility = "hidden";
 	viewDialog.style.visibility = "visible";
 }
 
 function hideDialog() {
 	const viewDialog = document.getElementById("game__dialog");
 	viewDialog.style.visibility = "hidden";
+	const viewGameBoard = document.getElementById("game__board");
+	viewGameBoard.style.visibility = "visible";
 }
 
 function restartGame() {

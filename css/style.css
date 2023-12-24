@@ -107,7 +107,7 @@ body {
            align-items: center;
 }
 
-.game__counter {
+#game__counter {
    position: relative;
    display: -webkit-box;
    display: -ms-flexbox;
@@ -164,7 +164,7 @@ body {
    color: red;
 }
 
-.game__board {
+#game__board {
    margin-top: 2vh;
    margin-bottom: 2vh;
 }

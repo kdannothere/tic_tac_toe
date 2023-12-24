@@ -31,11 +31,11 @@ function cellClicked(cell) {
 		cell.innerHTML = `${currentPlayer}`;
 		if (currentPlayer === player1) {
 			cell.style.color = player1Color;
-			viewTurnValue.innerHTML = player2;
+			viewTurnValue.innerHTML = player2Name;
 			viewTurnValue.style.color = player2Color;
 		} else {
 			cell.style.color = player2Color;
-			viewTurnValue.innerHTML = player1;
+			viewTurnValue.innerHTML = player1Name;
 			viewTurnValue.style.color = player1Color;
 		}
 	} else return;
